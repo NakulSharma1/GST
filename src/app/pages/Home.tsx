@@ -602,8 +602,8 @@ export default function Home() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="relative py-14 bg-gradient-to-br from-[#0B1F3A] to-[#0d2847] overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
+      <section className="relative py-14 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#C9A54C] rounded-full blur-3xl" />
         </div>
 
@@ -615,10 +615,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-5xl font-bold text-white mb-4">
+            <h2 className="text-5xl font-bold text-[#0B1F3A] mb-4">
               Get Started <span className="text-[#C9A54C]">Today</span>
             </h2>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-600 leading-relaxed">
               Request a free consultation and let's discuss your needs
             </p>
           </motion.div>
@@ -629,7 +629,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             onSubmit={handleSubmit}
-            className="bg-white/95 backdrop-blur-sm rounded-2xl p-10 shadow-2xl"
+            className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100"
           >
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
