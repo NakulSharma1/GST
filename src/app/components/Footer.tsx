@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import logo from "../../assets/logo/logo.jpeg";
 
 export default function Footer() {
   return (
@@ -8,11 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#C9A54C] to-[#b89543] rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-[#0B1F3A] font-bold text-xl">CA</span>
-              </div>
+              <img src={logo} alt="CORPSEVA SERVICES LLP" className="h-12 w-auto object-contain rounded-md" />
               <div>
-                <div className="font-serif text-white text-lg leading-tight font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>Expert Consultancy</div>
+                <div className="font-serif text-white text-lg leading-tight font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>CORPSEVA SERVICES LLP</div>
                 <div className="text-xs text-gray-400">Chartered Accountants</div>
               </div>
             </div>
@@ -60,24 +59,28 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Contact Info</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span>123 Business District, Financial Avenue, Mumbai - 400001</span>
-              </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <a href="tel:+911234567890" className="hover:text-white transition-colors">+91 123 456 7890</a>
+                <a href="tel:07340148246" className="hover:text-white transition-colors">07340148246</a>
               </li>
-              <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 flex-shrink-0" />
-                <a href="mailto:info@expertca.com" className="hover:text-white transition-colors">info@expertca.com</a>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                <span><span className="text-gray-400">Regd:</span> 33, Devi Nagar, Sodala, New Sanganer Road, Jaipur</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                <span><span className="text-gray-400">Branch:</span> C-15, Sector-65, Noida</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                <span><span className="text-gray-400">Office:</span> Mahima Trinity Mall, Office No 4F03, Swez Farm, New Sanganer Road, Sodala, Jaipur, Rajasthan 302019</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p className="text-gray-400">© 2026 Expert Consultancy. All rights reserved.</p>
+          <p className="text-gray-400">© 2026 CORPSEVA SERVICES LLP. All rights reserved.</p>
           <div className="flex gap-6">
             <Link to="/privacy-policy" className="hover:text-[#C9A54C] transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-[#C9A54C] transition-colors">Terms of Service</Link>

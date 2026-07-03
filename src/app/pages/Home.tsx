@@ -27,7 +27,7 @@ export default function Home() {
   const individualPlans = [
     {
       name: "Starter",
-      price: "₹999",
+      price: "₹1,500",
       period: "/year",
       tagline: "Perfect for salaried individuals",
       popular: false,
@@ -45,7 +45,7 @@ export default function Home() {
     },
     {
       name: "Professional",
-      price: "₹2,499",
+      price: "₹3,000",
       period: "/year",
       tagline: "For professionals & freelancers",
       popular: true,
@@ -56,7 +56,6 @@ export default function Home() {
         { label: "House Property Income", included: true },
         { label: "Dedicated CA Assigned", included: true },
         { label: "Priority Support", included: true },
-        { label: "2 Free Revisions", included: true },
         { label: "F&O / Crypto Income", included: false },
       ],
       cta: "Get Started",
@@ -71,11 +70,8 @@ export default function Home() {
         { label: "ITR-4 / NRI Filing", included: true },
         { label: "F&O & Crypto Income", included: true },
         { label: "Foreign & NRI Income", included: true },
-        { label: "GST Returns (3 months)", included: true },
         { label: "Dedicated Senior CA", included: true },
         { label: "Tax Planning Session", included: true },
-        { label: "Unlimited Revisions", included: true },
-        { label: "Notice Handling Support", included: true },
       ],
       cta: "Get Started",
     },
@@ -84,7 +80,7 @@ export default function Home() {
   const businessPlans = [
     {
       name: "Startup",
-      price: "₹9,999",
+      price: "₹14,999",
       period: "/year",
       tagline: "For newly incorporated companies",
       popular: false,
@@ -102,7 +98,7 @@ export default function Home() {
     },
     {
       name: "Growth",
-      price: "₹24,999",
+      price: "₹29,999",
       period: "/year",
       tagline: "For growing SMEs",
       popular: true,
@@ -472,14 +468,14 @@ export default function Home() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid lg:grid-cols-3 gap-8 items-start">
+          <div className="grid lg:grid-cols-3 gap-8 items-stretch">
             {activePlans.map((plan, idx) => (
               <motion.div
                 key={`${pricingTab}-${idx}`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
-                className={`relative rounded-2xl p-8 flex flex-col ${
+                className={`relative rounded-2xl p-8 flex flex-col h-full ${
                   plan.popular
                     ? "bg-[#0B1F3A] text-white shadow-2xl scale-105"
                     : "bg-white border border-gray-200 shadow-lg"

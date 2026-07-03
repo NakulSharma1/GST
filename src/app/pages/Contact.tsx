@@ -20,17 +20,27 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+91 123 456 7890", "+91 098 765 4321"],
+      details: ["07340148246"],
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@expertca.com", "support@expertca.com"],
+      details: ["info@corpseva.com"],
+    },
+    {
+      icon: MapPin,
+      title: "Registered Address",
+      details: ["33, Devi Nagar, Sodala, New Sanganer Road, Jaipur"],
+    },
+    {
+      icon: MapPin,
+      title: "Branch Address",
+      details: ["C-15, Sector-65, Noida"],
     },
     {
       icon: MapPin,
       title: "Office Address",
-      details: ["123 Business District, Financial Avenue", "Mumbai - 400001, Maharashtra, India"],
+      details: ["Mahima Trinity Mall, Office No 4F03, Swez Farm", "New Sanganer Road, Sodala, Jaipur, Rajasthan 302019"],
     },
     {
       icon: Clock,

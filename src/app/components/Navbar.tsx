@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router";
+import logo from "../../assets/logo/logo.jpeg";
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
@@ -46,11 +47,9 @@ export default function Navbar({ onRequestCallback, onBookAppointment }: NavbarP
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#0B1F3A] to-[#1a3a5c] rounded-xl flex items-center justify-center shadow-md">
-              <span className="text-[#C9A54C] font-bold text-xl">CA</span>
-            </div>
+            <img src={logo} alt="CORPSEVA SERVICES LLP" className="h-12 w-auto object-contain" />
             <div>
-              <div className="font-serif text-[#0B1F3A] text-lg leading-tight font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>Expert Consultancy</div>
+              <div className="font-serif text-[#0B1F3A] text-lg leading-tight font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>CORPSEVA SERVICES LLP</div>
               <div className="text-xs text-gray-600">Chartered Accountants</div>
             </div>
           </Link>
