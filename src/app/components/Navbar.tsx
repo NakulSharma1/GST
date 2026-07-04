@@ -45,28 +45,28 @@ export default function Navbar({ onRequestCallback, onBookAppointment }: NavbarP
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="CORPSEVA SERVICES LLP" className="h-12 w-auto object-contain" />
+        <div className="flex justify-between items-center h-16">
+          <Link to="/" className="flex items-center gap-2 flex-shrink-0">
+            <img src={logo} alt="CORPSEVA SERVICES LLP" className="h-10 w-auto object-contain" />
             <div>
-              <div className="font-serif text-[#0B1F3A] text-lg leading-tight font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>CORPSEVA SERVICES LLP</div>
-              <div className="text-xs text-gray-600">Chartered Accountants</div>
+              <div className="text-[#0B1F3A] text-sm leading-tight font-bold tracking-wide">CORPSEVA SERVICES LLP</div>
+              <div className="text-xs text-gray-500">Chartered Accountants</div>
             </div>
           </Link>
 
-          <div className="hidden lg:flex items-center gap-8">
-            <Link to="/" className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium">
+          <div className="hidden lg:flex items-center gap-5 text-sm">
+            <Link to="/" className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium whitespace-nowrap">
               Home
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium">
+            <Link to="/about" className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium whitespace-nowrap">
               About
             </Link>
             <div className="relative group">
-              <button className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium flex items-center gap-1">
+              <button className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium flex items-center gap-1 whitespace-nowrap">
                 Services
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 border border-gray-100">
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 border border-gray-100 z-50">
                 {services.map((service) => (
                   <Link
                     key={service.path}
@@ -78,27 +78,27 @@ export default function Navbar({ onRequestCallback, onBookAppointment }: NavbarP
                 ))}
               </div>
             </div>
-            <Link to="/knowledge-centre" className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium">
+            <Link to="/knowledge-centre" className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium whitespace-nowrap">
               Knowledge Centre
             </Link>
-            <Link to="/client-portal" className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium">
+            <Link to="/client-portal" className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium whitespace-nowrap">
               Client Portal
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium">
+            <Link to="/contact" className="text-gray-700 hover:text-[#C9A54C] transition-colors font-medium whitespace-nowrap">
               Contact
             </Link>
           </div>
 
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
             <button
               onClick={onRequestCallback}
-              className="px-5 py-2.5 text-[#0B1F3A] border-2 border-[#0B1F3A]/20 rounded-lg hover:border-[#C9A54C] hover:text-[#C9A54C] transition-all duration-300 font-medium"
+              className="px-4 py-2 text-sm text-[#0B1F3A] border-2 border-[#0B1F3A]/20 rounded-lg hover:border-[#C9A54C] hover:text-[#C9A54C] transition-all duration-300 font-medium whitespace-nowrap"
             >
               Request Callback
             </button>
             <button
               onClick={onBookAppointment}
-              className="px-5 py-2.5 bg-[#C9A54C] text-white rounded-lg hover:bg-[#b89543] transition-all duration-300 font-medium shadow-lg shadow-[#C9A54C]/20"
+              className="px-4 py-2 text-sm bg-[#C9A54C] text-white rounded-lg hover:bg-[#b89543] transition-all duration-300 font-medium shadow-lg shadow-[#C9A54C]/20 whitespace-nowrap"
             >
               Book Consultation
             </button>
